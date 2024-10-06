@@ -1,0 +1,105 @@
+html, body 
+{
+    margin: 0;
+}
+
+.MainHeader{
+    display: grid;
+
+    grid-template-columns: 9vh 1fr 84px 3px 84px 60px;
+    grid-template-rows: 1fr;
+    height: 9.5vh;
+
+    background-color: darksalmon;
+
+    border: 0px;
+    
+    padding: 0px;
+    margin: 0px;   
+}
+
+.LoginButton{
+    display: grid;
+    grid-column: 5;
+
+    background-color: transparent;
+
+    align-items: center;
+    
+    margin-right: auto;
+    margin-left: 6px;
+    padding: 8px;
+
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    color: black;
+
+    cursor: pointer;
+}
+
+.RegisterButton{
+    display: grid;
+    grid-column: 3;
+
+    background-color: transparent;
+
+    align-self: center;
+
+    height: 6vh;
+    
+    margin-left: auto;
+    margin-right: 6px;
+    padding: 8px;
+
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.VerticalBreak {
+    display: grid;
+    grid-column: 4;
+
+    align-items: center;
+
+    background-color:black;
+
+    height: 90%;
+    width: 1px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.LogoText{
+    display: grid;
+    grid-column: 2;
+
+    align-self: center;
+
+    font-size: 6.5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 550;
+
+    margin-top: 0.2vh;
+    margin-left: 0.9vh;
+}
+
+.Logo{
+    display: grid;
+    grid-column: 1;
+
+    align-self: center;
+
+    width: 7vh;
+    height: 7vh;
+
+    margin-bottom: 0.4vh;
+    margin-left: 2.9vh;
+
+    background-image: url("images/logo.svg");
+    background-position: center;
+    background-size: contain;
+}
