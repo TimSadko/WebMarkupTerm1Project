@@ -3,12 +3,41 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <section class="MainHeader">
+    <aside class="MenuSideBar" id="menu_side">
+        <div class="CloseSection">
+            <a>Content</a>
+            <button class="CloseButton" onclick="menu_side_bar_close()">
+                <img src="images/close_icon.svg" class="CloseIcon">
+            </button>
+        </div>
+        <a>Home</a>
+        <a>Contact</a>
+        <a>Other</a>
+        <a>Other 2</a>
+    </aside>
+
+    <nav class="MainHeader">
+        <button class="MenuButton" onclick="menu_side_bar_open()">
+            <img src="images/menu_icon.svg" class="MenuIcon">
+        </button>     
         <div class="Logo"></div>
         <a class="LogoText">Atlas</a>
     
         <button class="RegisterButton">register</button>
         <div class="VerticalBreak"> </div>
         <button class="LoginButton">login</button>
-    </section>
+    </nav>
+    <section class="NewsUpperSection">
+        <a class="NewsUpperSectionText">Some New Info</a>
+    </section>  
+
+    <script>
+        function menu_side_bar_open() {
+          document.getElementById("menu_side").style.display = "inline-flex";
+        }
+        
+        function menu_side_bar_close() {
+          document.getElementById("menu_side").style.display = "none";
+        }
+    </script>
 </body>
