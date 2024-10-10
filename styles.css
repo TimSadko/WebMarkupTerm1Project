@@ -18,8 +18,11 @@ html, body
     margin: 0px;   
 
     width: 100%;
+    max-width: 100%;
 
     z-index: 500;
+
+    user-select: none;
 }
 
 .MenuIcon{
@@ -62,6 +65,8 @@ html, body
     font-weight: 550;
 
     z-index: 666;
+
+    user-select: none;
 }
 
 .CloseSection{
@@ -131,10 +136,13 @@ html, body
 
 .MainPageContent{
     display: grid;
-    grid-template-columns: 12vh 1fr 24%;
+    grid-template-columns: 9vh 1fr 50vh;
     grid-template-rows: 1fr;
 
+    width: 100%;
+    max-width: 100%;
 
+    overflow: hidden;
 }
 
 .MainContentSection{   
@@ -151,15 +159,14 @@ html, body
 .ExhibitionSection{
     display: inline-block;
 
-    column-count: 2;
+    column-width: 42vh;
+    column-count: 3;
     column-gap: 2vh;
     
     background-color: beige;
 
     padding: 2.5%;
 
-    max-width: 95%;
-    width: 95%;
 }
 
 .ExhibitionSectionImage{  
@@ -172,10 +179,12 @@ html, body
     border-color: black;
     border-width: 0.5vh;
 
-    max-width: 72vh;
+    margin: 1vh;
+
+    max-width: auto;
     max-height: auto; 
     
-    width: 72vh;
+    width: 44vh;
     height: auto;
 }
 
@@ -203,6 +212,9 @@ html, body
 
     justify-content: center;
 
+    width: 100%;
+    max-width: 100%;
+
     background-color: rgb(235, 235, 210);
 }
 
@@ -218,6 +230,8 @@ html, body
 
     text-align: center;
 
+    max-width: 100%;
+
     background-color: rgb(27, 27, 27);
 
     border-width: 0.3vh;
@@ -225,6 +239,8 @@ html, body
     border-style: solid;
 
     height: fit-content;
+
+    user-select: none;
 }
 
 .Weekdays{
@@ -254,15 +270,15 @@ html, body
 }
 
 .Day:hover{
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(15, 15, 15);
 }
 
 .EventDay{
-    background-color: rgb(63, 223, 46);
+    background-color: rgb(70, 179, 43);
 }
 
 .EventDay:hover{
-    background-color: rgb(70, 179, 43);
+    background-color: rgb(63, 223, 46);
 }
 
 .EventList{
@@ -272,6 +288,8 @@ html, body
     margin-bottom: 4vh;
 
     padding: 1vh;
+
+    max-width: 100%;
 
     border-color: black;
     border-width: 0.3vh;
