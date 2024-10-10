@@ -131,7 +131,7 @@ html, body
 
 .MainPageContent{
     display: grid;
-    grid-template-columns: 12vh 1fr 22%;
+    grid-template-columns: 12vh 1fr 24%;
     grid-template-rows: 1fr;
 
 
@@ -214,6 +214,7 @@ html, body
 
     margin-top: 2vh;
     margin-left: 2vh;
+    margin-right: 2vh;
 
     text-align: center;
 
@@ -229,7 +230,7 @@ html, body
 .Weekdays{
     background-color: rgb(27, 27, 27);
 
-    height: 6vh;
+    height: 6.5vh;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5vh;
@@ -240,7 +241,7 @@ html, body
 }
 
 .Days{
-    height: 6vh;
+    height: 6.5vh;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5vh;
@@ -266,12 +267,12 @@ html, body
 
 .EventList{
     margin-left: 2vh;
-    margin-right: 1.3vh;
+    margin-right: 2vh;
     margin-top: 1.8vh;
     margin-bottom: 4vh;
 
     padding: 1vh;
-    
+
     border-color: black;
     border-width: 0.3vh;
     border-style: solid;
@@ -282,7 +283,7 @@ html, body
 .SingleEvent{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 3.5vh 1fr;
+    grid-template-rows: 3.5vh 3vh 1fr;
 
     background-color: rgb(174, 145, 69);
 
@@ -291,9 +292,18 @@ html, body
     margin-bottom: 0.5vh;
 }
 
-.EventTitle{
+.EventDateText{
     grid-column: 1; 
     grid-row: 1;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+.EventTitle{
+    grid-column: 1; 
+    grid-row: 2;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5vh;
@@ -304,17 +314,19 @@ html, body
     grid-column: 2; 
     grid-row: 1;
 
+    margin-top: 0.3vh;
+
     text-align: right;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.3vh;
+    font-size: 2.7vh;
     font-weight: 550;
     color: rgb(24, 0, 0);
 }
 
 .EventMainText{
     grid-column: 1 / 3; 
-    grid-row: 2;
+    grid-row: 3;
 
     margin-left: 0.8vh;
 
