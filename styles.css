@@ -4,7 +4,10 @@ html, body
 }
 
 .MainHeader{
+    position: fixed;
     display: grid;
+
+    top: 0;
 
     grid-template-columns: 9.5vh 10vh 1fr 18vh 3px 18vh 60px;
     grid-template-rows: 1fr;
@@ -50,12 +53,14 @@ html, body
 }
 
 .MenuSideBar{
-    position: absolute;
+    position: fixed;
     display: none;
     flex-direction: column;
     float: left;
+    top: 0;
 
     width: 15%;
+    height: 100%;
     background-color: white;
 
     align-self: center;
@@ -181,10 +186,10 @@ html, body
 
     margin: 1vh;
 
-    max-width: auto;
+    max-width: 95%;
     max-height: auto; 
     
-    width: 44vh;
+    width: 95%;
     height: auto;
 }
 
@@ -246,7 +251,7 @@ html, body
 .Weekdays{
     background-color: rgb(27, 27, 27);
 
-    height: 6.5vh;
+    height: 6.5vh;   
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5vh;
@@ -254,6 +259,12 @@ html, body
     color: white;
 
     text-decoration: underline;
+}
+
+.WeekDayS{
+    border-color: white;
+    border-width: 0.25vh;
+    border-style: solid;
 }
 
 .Days{
@@ -273,12 +284,36 @@ html, body
     background-color: rgb(15, 15, 15);
 }
 
+.NextMonthDay{
+    background-color: rgb(16, 16, 16);
+}
+
+.NextMonthDay:hover{
+    background-color: rgb(26, 26, 26);
+}
+
 .EventDay{
     background-color: rgb(70, 179, 43);
 }
 
 .EventDay:hover{
     background-color: rgb(63, 223, 46);
+}
+
+.NextMonthDayEvent{
+    background-color: rgb(114, 174, 99);
+}
+
+.NextMonthDayEvent:hover{
+    background-color: rgb(128, 195, 111);
+}
+
+.CurrentDay{
+    border-color: rgb(149, 174, 255);
+    border-width: 0.25vh;
+    border-style: solid;
+
+    text-decoration: underline;
 }
 
 .EventList{
@@ -301,13 +336,23 @@ html, body
 .SingleEvent{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 3.5vh 3vh 1fr;
+    grid-template-rows: 3.5vh 3.5vh 1fr;
 
     background-color: rgb(174, 145, 69);
 
-    padding: 2vh;
+    padding: 2vh;   
 
-    margin-bottom: 0.5vh;
+    margin-bottom: 0.8vh;
+}
+
+.LastSingleEvent{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3.5vh 3.5vh 1fr;
+
+    background-color: rgb(174, 145, 69);
+
+    padding: 2vh; 
 }
 
 .EventDateText{
@@ -320,11 +365,11 @@ html, body
 }
 
 .EventTitle{
-    grid-column: 1; 
+    grid-column: 1 / 3; 
     grid-row: 2;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vh;
+    font-size: 2.7vh;
     font-weight: 550;
 }
 
@@ -337,9 +382,9 @@ html, body
     text-align: right;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.7vh;
+    font-size: 2.5vh;
     font-weight: 550;
-    color: rgb(24, 0, 0);
+    color: rgb(38, 0, 0);
 }
 
 .EventMainText{
@@ -475,7 +520,7 @@ html, body
 
     height: 4vh;
 
-    
+    margin-top: 9.5vh;
 }
 
 .NewsUpperSectionText{
@@ -488,4 +533,90 @@ html, body
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.2vh;
     font-weight: 550;
+}
+
+.MainFooter{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    background-color: wheat;
+}
+
+.FooterLine{
+    width: 0.1vh;
+
+    border-radius: 50%;
+    border-color: rgb(21, 21, 21);
+
+    border-width: 0.1vh;
+
+    background-color: rgb(21, 21, 21);
+
+    margin-top: 3vh;    
+    margin-bottom: 3vh;
+}
+
+.FooterContactInfoSection{
+    display: flex;
+    flex-direction: column; 
+
+    width: 40vh;
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+
+    text-align: left;
+}
+
+.FooterContactInfoTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    font-weight: 700;
+
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 0.3vh;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.FooterContactInfoMainText{
+    margin-top: 0vh;
+    margin-bottom: 0.5vh;
+    margin-right: 0;
+    margin-left: 5vh;
+}
+
+.FooterLocationDiv{
+    display: grid;
+    grid-template-columns: 2.5vh 1fr;
+
+    margin-left: 4vh;
+}
+
+.FooterLocationText{
+    grid-column: 2;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+    text-decoration: underline;
+
+    
+
+    margin-left: 0.2vh;
+}
+
+.FooterLocationImage{
+    grid-column: 1;
+    width: 2vh;
+
+    align-self: center;
 }
