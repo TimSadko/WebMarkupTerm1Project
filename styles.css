@@ -9,7 +9,7 @@ html, body
 
     top: 0;
 
-    grid-template-columns: 9.5vh 10vh 1fr 18vh 3px 18vh 60px;
+    grid-template-columns: 8.5vh 10vh 1fr 18vh 3px 18vh 60px;
     grid-template-rows: 1fr;
     height: 9.5vh;
 
@@ -86,7 +86,7 @@ html, body
 }
 
 .CloseSection:hover{
-    background-color: rgb(230, 40, 40);
+    background-color: rgb(190, 35, 35);
 }
 
 .CloseButton{
@@ -109,7 +109,7 @@ html, body
 }
 
 .SelectedSection:hover{
-    background-color: rgb(122, 230, 81);
+    background-color: rgb(112, 194, 75);
 }
 
 .NotSelectedSection{
@@ -124,7 +124,7 @@ html, body
 }
 
 .NotSelectedSection:hover{
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(220, 220, 220);
 }
 
 .CloseIcon{
@@ -158,6 +158,8 @@ html, body
     max-width: 100%;
     width: 100%;
 
+    margin-top: 1vh;
+
     height: auto;
 }
 
@@ -172,6 +174,12 @@ html, body
 
     padding: 2.5%;
 
+    border-color: rgb(224, 219, 201);
+    border-width: 1vh;
+    border-style: solid;
+
+    margin-bottom: 1vh;
+    margin-right: 1vh;
 }
 
 .ExhibitionSectionImage{  
@@ -540,6 +548,8 @@ html, body
 }
 
 .MainFooter{
+    width: 100%;
+
     display: flex;
     flex-direction: row;
 
@@ -605,6 +615,15 @@ html, body
     margin-left: 5vh;
 
     text-decoration: underline  ;
+    color: white;
+}
+
+.FooterContactInfoLink:link{
+    color: rgb(212, 212, 212);
+}
+
+.FooterContactInfoLink:visited{
+    color: #bbcaca;
 }
 
 .FooterLocationDiv{
@@ -623,6 +642,16 @@ html, body
     text-decoration: underline;
 
     margin-left: 0.2vh;
+
+    color: white;
+}
+
+.FooterLocationLink:link{
+    color: rgb(212, 212, 212);
+}
+
+.FooterLocationLink:visited{
+    color: #bbcaca;
 }
 
 h1.FooterLocationText{
@@ -646,4 +675,326 @@ h1.FooterLocationText{
     width: 2.2vh;
 
     align-self: center;
+    user-select: none;
+}
+
+.MainLoginSection{
+    display: grid;
+
+    grid-template-columns: 13vh 10vh 1fr 18vh 3px 18vh 60px;
+
+    margin: 10.5vh;
+}
+
+.LoginForm{
+    display: grid;
+
+    grid-column: 2;
+
+    padding: 2vh;
+
+    width: 60vh;
+
+    background-color: beige;
+
+    border-color: rgb(224, 219, 201);
+    border-width: 1vh;
+    border-style: solid;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+
+    user-select: none;
+}
+
+.LoginLabel{
+    margin-left: 0.5vh;
+    margin-bottom: 0.4vh;
+}
+
+.LoginField{
+    width: 30vh;
+
+    font-size: 1.5vh;
+}
+
+.LoginSubmitButton{
+    width: 18vh;
+    height: 4vh;
+
+    margin-top: 1vh;
+
+    border-width: 0.3vh;
+    border-color: black;
+    border-style: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vh;
+    font-weight: 700;
+
+    background-color: rgb(140, 255, 74);
+
+    cursor: pointer;
+}
+
+.LoginSubmitButton:hover{
+    border-style: solid;
+}
+
+.LoginButtonRegister{
+    width: 18vh;
+    height: 4vh;
+
+    margin-top: 1vh;
+
+    border-width: 0.3vh;
+    border-color: black;
+    border-style: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vh;
+    font-weight: 700;
+
+    background-color: rgb(206, 206, 206);
+
+    cursor: pointer;
+}
+
+.LoginButtonRegister:hover{
+    border-style: solid;
+}
+
+.BottomFooter{
+    position: fixed;
+    
+    left: 0;
+    bottom: 0;
+}
+
+.MainRegisterSection{
+    display: grid;
+
+    grid-template-columns: 9vh 1fr 100vh;
+
+    margin: 10.5vh;
+}
+
+.RegisterSection{
+    grid-column: 2;
+
+    padding: 2vh;
+
+    background-color: beige;
+
+    border-color: rgb(224, 219, 201);
+    border-width: 1vh;
+    border-style: solid;
+}
+
+.RegisterForm{
+    display: grid;  
+    
+    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-rows: 2.5vh 2.5vh 2.5vh 2.5vh 2.5vh 2.5vh 5vh 5vh; 
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+
+    user-select: none;
+}
+
+.RegisterLabel{
+    margin-left: 0.5vh;
+    margin-bottom: 0.4vh;
+}
+
+.RegisterNameLabel{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.RegisterSurnameLabel{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.RegisterEmailLabel{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.RegisterPassLabel{
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.RegisterConfPassLabel{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.RegisterField{
+    font-size: 1.8vh;
+}
+
+.RegisterNameField{
+    grid-column: 1;
+    grid-row: 2;
+
+    width: 94%;
+}
+
+.RegisterSurnameField{
+    grid-column: 2;
+    grid-row: 2;
+
+    width: 94%;
+}
+
+.RegisterEmailField{
+    grid-column: 1 / 3;
+    grid-row: 4;
+
+    width: 75%;
+}
+
+.RegisterPassField{
+    grid-column: 1;
+    grid-row: 6;
+
+    width: 94%;
+}
+
+.RegisterConfPassField{
+    grid-column: 2;
+    grid-row: 6;
+
+    width: 94%;
+}
+
+.RegisterSubmitButton{
+    grid-column: 1;
+    grid-row: 7;
+
+    width: 18vh;
+    height: 4vh;
+
+    margin-top: 1vh;
+
+    border-width: 0.3vh;
+    border-color: black;
+    border-style: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vh;
+    font-weight: 700;
+
+    background-color: rgb(140, 255, 74);
+
+    cursor: pointer;
+}
+
+.RegisterSubmitButton:hover{
+    border-style: solid;
+}
+
+.RegisterLoginButton{
+    grid-column: 1;
+    grid-row: 8;
+
+    width: 18vh;
+    height: 4vh;
+
+    margin-top: 1vh;
+
+    border-width: 0.3vh;
+    border-color: black;
+    border-style: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vh;
+    font-weight: 700;
+
+    background-color: rgb(206, 206, 206);
+
+    cursor: pointer;
+}
+
+.RegisterLoginButton:hover{
+    border-style: solid;
+}
+
+.MainSidePageContent{
+    display: grid;  
+    
+    grid-template-columns: 11vh 1fr 50vh;
+
+    margin-top: 9.5vh;
+}
+
+.SidePageMainTextSection{
+    grid-column: 2;
+}
+
+.SidePageAsideSection{
+    grid-column: 3;
+
+    background-color: beige;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1vh;
+    font-weight: 700;
+}
+
+.AsideListBack{
+    background-color: rgb(214, 204, 173);
+
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+
+    padding: 2vh;
+
+    width: fit-content;
+}
+
+.AsideList{
+    list-style: none;
+
+    background-color: rgb(214, 214, 173);
+
+    margin: 0;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 1vh;
+}
+
+.AsideSubList{
+    list-style: none;
+}
+
+.ListNumText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9vh;
+    font-weight: 700;
+
+    color: black;
+}
+
+.ListText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9vh;
+    font-weight: 700;
+
+    color: rgb(25, 98, 255);
+
+    cursor: pointer;
+}
+
+.ListText:hover{
+    text-decoration: underline;
 }

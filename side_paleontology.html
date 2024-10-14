@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head lang="en-US">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Atlas</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="data:image/x-icon;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS40LjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTYgMjU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7Zm9udC1mYW1pbHk6J1NpdGthRGlzcGxheS1JdGFsaWMnO30NCgkuc3Qxe2ZvbnQtc2l6ZTozMDlweDt9DQo8L3N0eWxlPg0KPHRleHQgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgMSA0OS4xMzQ4IDIxOC43ODYxKSIgY2xhc3M9InN0MCBzdDEiPkE8L3RleHQ+DQo8L3N2Zz4NCg==" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <aside class="MenuSideBar" id="menu_side">
+        <div class="CloseSection" onclick="menu_side_bar_close()">
+            <a>Close</a>
+            <button class="CloseButton">
+                <img src="images/close_icon.svg" class="CloseIcon">
+            </button>
+        </div>
+        <a class="SelectedSection" onclick="go_to_home_page()">Home</a>
+        <a class="NotSelectedSection">Contact</a>
+        <a class="NotSelectedSection">Other</a>
+        <a class="NotSelectedSection">Other 2</a>
+    </aside>
+
+    <nav class="MainHeader">
+        <button class="MenuButton" onclick="menu_side_bar_open()">
+            <img src="images/menu_icon.svg" class="MenuIcon">
+        </button>     
+        <div class="Logo"></div>
+        <a class="LogoText">Atlas</a>
+    
+        <button class="RegisterButton" onclick="go_to_register_page()">register</button>
+        <div class="VerticalBreak"> </div>
+        <button class="LoginButton" onclick="go_to_login_page()">login</button>
+    </nav>
+
+    <main class="MainSidePageContent">
+        <section class="SidePageMainTextSection">
+
+        </section>
+
+        <aside class="SidePageAsideSection">
+            <section class="AsideListBack">
+                <ul class="AsideList">
+                    <li class="ListText"><a class="ListNumText">1. </a>Lorem ipsum</li>
+                    <li class="ListText"><a class="ListNumText">2. </a>Dolor sit amet</li>
+                    <ul class="AsideSubList">
+                        <li class="ListText"><a class="ListNumText">2.1. </a>Lorem ipsum</li>
+                        <li class="ListText"><a class="ListNumText">2.2. </a>Dolor sit amet</li>
+                        <li class="ListText"><a class="ListNumText">2.3. </a>At sunt nobis</li>
+                    </ul>
+                    <li class="ListText"><a class="ListNumText">3. </a>At sunt nobis</li>
+                    <ul class="AsideSubList">
+                        <li class="ListText"><a class="ListNumText">3.1. </a>Lorem ipsum</li>
+                        <li class="ListText"><a class="ListNumText">3.2. </a>Dolor sit amet</li>
+                    </ul>
+                    <li class="ListText"><a class="ListNumText">4. </a>Non sint dolor</li>
+                    <ul class="AsideSubList">
+                        <li class="ListText"><a class="ListNumText">4.1. </a>Lorem ipsum</li>
+                        <li class="ListText"><a class="ListNumText">4.2. </a>Dolor sit amet</li>
+                        <li class="ListText"><a class="ListNumText">4.3. </a>At sunt nobis</li>
+                        <li class="ListText"><a class="ListNumText">4.4. </a>Non sint dolor</li>
+                    </ul>
+                    <li class="ListText"><a class="ListNumText">5. </a>Est Quis</li>
+                    <ul class="AsideSubList">
+                        <li class="ListText"><a class="ListNumText">5.1. </a>Lorem ipsum</li>
+                        <li class="ListText"><a class="ListNumText">5.2. </a>Dolor sit amet</li>
+                    </ul>
+                    <li class="ListText"><a class="ListNumText">6. </a>Consequuntur</li>
+                </ul>
+            </section>       
+        </aside>
+    </main>
+
+    <footer class="MainFooter">
+        <section class="FooterContactInfoSection">
+            <p class="FooterContactInfoTitle">Contact Info:</p>
+            <a class="FooterContactInfoMainText">Ned: +310789545507</a>
+            <a class="FooterContactInfoMainText">Usa: +10116593446</a>
+            <a class="FooterContactInfoMainText">Email: main.contact@atlas.com</a>
+        </section>
+        <div class="FooterLine"></div>
+        <section class="FooterContactInfoSection">
+            <p class="FooterContactInfoTitle">Location:</p>
+            <div class="FooterLocationDiv">
+                <img class="FooterLocationImage" src="images/loc_icon.png">
+                <a href="https://maps.app.goo.gl/q8KzZeEc3eonzGVb6" class="FooterLocationLink">Groot Heiligland 62,<br> 2011 ES Haarlem</a>
+            </div>
+            
+            <a class="FooterLocationMainText">From 2024 we are also available<br>at virtual museum!</a>
+        </section>
+        <div class="FooterLine"></div>
+        <section class="FooterContactInfoSection">
+            <p class="FooterContactInfoTitle">Other:</p>
+            <a class="FooterContactInfoLink">Buy ticket's</a>
+            <a class="FooterContactInfoMainText">usa: +10116593446</a>
+            <a class="FooterContactInfoMainText">email: main.contact@atlas.com</a>
+        </section>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
