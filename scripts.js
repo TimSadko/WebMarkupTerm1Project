@@ -21,3 +21,16 @@ function menu_side_bar_open() {
   function go_to_paleontology_page() {
       window.open("side_paleontology.html",'_self');
   }
+
+  function go_to_art_page() {
+    window.open("side_art.html",'_self');
+ }
+
+ function go_to_botany_page() {
+    window.open("side_botany.html",'_self');
+ }
+
+ function go_to_history_page() {
+    window.open("side_history.html",'_self');
+ }
+  
