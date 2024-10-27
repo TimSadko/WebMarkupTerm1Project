@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head lang="en-US">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Timofii Sadko">
+    <meta name="keywords" content="Museum, Paleontology, Histort, Botany, Art, Gallery">
+    <meta name="description" content="This is the museum page. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. ">
+
+    <title>Atlas</title>
+
+    <link rel="stylesheet" type="text/css" href="css/phone_styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Grenze">
+
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS40LjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTYgMjU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7Zm9udC1mYW1pbHk6J1NpdGthRGlzcGxheS1JdGFsaWMnO30NCgkuc3Qxe2ZvbnQtc2l6ZTozMDlweDt9DQo8L3N0eWxlPg0KPHRleHQgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgMSA0OS4xMzQ4IDIxOC43ODYxKSIgY2xhc3M9InN0MCBzdDEiPkE8L3RleHQ+DQo8L3N2Zz4NCg=="/>
+</head>
+<body lang="en-US">
+    <aside class="MenuSideBar" id="menu_side">
+        <div class="CloseSection MenuSideSection" onclick="menu_side_bar_close()">
+            <a>Close</a>
+            <button class="CloseButton">
+                <img src="images/close_icon.svg" alt="close icon" title="Close Menu" class="CloseIcon">
+            </button>
+        </div>
+        <a class="SelectedSection MenuSideSection" onclick="phone_go_to_home_page()">Home</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_paleontology_page()">Paleontology</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_art_page()">Art</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_history_page()">History</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_botany_page()">Botany</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_login_page()">Login</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_register_page()">Register</a>
+    </aside>
+
+    <nav class="MainHeader">
+        <button class="MenuButton" onclick="menu_side_bar_open()">
+            <img src="images/menu_icon.svg" alt="menu icon" title="Menu" class="MenuIcon">
+        </button>     
+        <img class="Logo" src="images/logo.svg">
+        <a class="LogoText">Atlas</a>
+    </nav>
+
+    <main class="MainLoginSection">
+        <form method="post" class="LoginForm">
+            <legend class="LoginLegend">Login:</legend>
+
+            <label class="LoginLabel">Email</label>
+            <input class="LoginField" type="email" maxlength="64" required>
+
+            <label class="LoginLabel">Password</label>
+            <input class="LoginField" type="password" maxlength="64" required>
+
+            <input class="LoginSubmitButton" type="submit" value="Login">
+
+            <button class="LoginButtonRegister" onclick="phone_go_to_register_page()">Register</button>
+        </form>
+    </main>
+
+    <footer class="MainFooter">
+        <section class="FooterContactInfoSection">
+            <p class="FooterContactInfoTitle">Contact Info:</p>
+            <a class="FooterContactInfoMainText">Ned: +310789545507</a>
+            <a class="FooterContactInfoMainText">Usa: +10116593446</a>
+            <a class="FooterContactInfoMainText">Email: main.contact@atlas.com</a>
+        </section>
+
+        <div class="FooterLine"></div>
+
+        <section class="FooterContactInfoSection">
+            <p class="FooterContactInfoTitle">Location:</p>
+            <section class="FooterLocationDiv">
+                <img class="FooterLocationImage" alt="location icon" title="Location" src="images/loc_icon.png">
+                <a class="FooterLocationLink" href="https://maps.app.goo.gl/q8KzZeEc3eonzGVb6">Groot Heiligland 62, 2011 ES Haarlem</a>
+            </section>
+            
+            <a class="FooterLocationMainText">From 2024 we are also available at virtual museum!</a>
+        </section>
+        
+        <div class="FooterLine"></div>
+
+        <section class="FooterContactInfoSection">
+            <p class="FooterContactInfoTitle">Other:</p>
+            <a class="FooterContactInfoLink">Buy ticket's</a>
+            <a class="FooterContactInfoLink">Privacy policy</a>
+            <a class="FooterContactInfoMainText">&copy;Atlas inc.</a>
+        </section>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>

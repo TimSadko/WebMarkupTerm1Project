@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head lang="en-US">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Timofii Sadko">
+    <meta name="keywords" content="Museum, Paleontology, Histort, Botany, Art, Gallery">
+    <meta name="description" content="This is the museum page. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. ">
+
+    <title>Atlas</title>
+
+    <link rel="stylesheet" type="text/css" href="css/phone_styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Grenze">
+
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS40LjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTYgMjU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7Zm9udC1mYW1pbHk6J1NpdGthRGlzcGxheS1JdGFsaWMnO30NCgkuc3Qxe2ZvbnQtc2l6ZTozMDlweDt9DQo8L3N0eWxlPg0KPHRleHQgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgMSA0OS4xMzQ4IDIxOC43ODYxKSIgY2xhc3M9InN0MCBzdDEiPkE8L3RleHQ+DQo8L3N2Zz4NCg=="/>
+</head>
+<body lang="en-US">
+    <aside class="MenuSideBar" id="menu_side">
+        <div class="CloseSection MenuSideSection" onclick="menu_side_bar_close()">
+            <a>Close</a>
+            <button class="CloseButton">
+                <img src="images/close_icon.svg" alt="close icon" title="Close Menu" class="CloseIcon">
+            </button>
+        </div>
+        <a class="SelectedSection MenuSideSection" onclick="phone_go_to_home_page()">Home</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_paleontology_page()">Paleontology</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_art_page()">Art</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_history_page()">History</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_botany_page()">Botany</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_login_page()">Login</a>
+        <a class="NotSelectedSection MenuSideSection" onclick="phone_go_to_register_page()">Register</a>
+    </aside>
+
+    <nav class="MainHeader">
+        <button class="MenuButton" onclick="menu_side_bar_open()">
+            <img src="images/menu_icon.svg" alt="menu icon" title="Menu" class="MenuIcon">
+        </button>     
+        <img class="Logo" src="images/logo.svg">
+        <a class="LogoText">Atlas</a>
+    </nav>
+
+    <header class="NewsUpperSection">
+        <a class="NewsUpperSectionText">New Exhibitions Begins In June! Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. </a>
+    </header>  
+
+    <main class="MainPageContent">
+        <aside class="SideContentSection">      
+            <table class="Calendar">
+                <colgroup>
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                </colgroup>
+
+                <tr class="Weekdays">
+                    <th class="WeekDayS"><strong>Mo</strong></th>
+                    <th class="WeekDayS"><strong>Tu</strong></th>
+                    <th class="WeekDayS"><strong>We</strong></th>
+                    <th class="WeekDayS"><strong>Th</strong></th>
+                    <th class="WeekDayS"><strong>Fr</strong></th>
+                    <th class="WeekDayS"><strong>Sa</strong></th>
+                    <th class="WeekDayS"><strong>Su</strong></th>
+                </tr>
+                <tr class="Days">  
+                    <th class="Day">1</th>
+                    <th class="Day">2</th>
+                    <th class="Day">3</th>
+                    <th class="Day">4</th>
+                    <th class="Day CurrentDay">5</th>
+                    <th class="Day">6</th>
+                    <th class="Day">7</th>
+                </tr>
+                <tr class="Days">
+                    <th class="Day">8</th>
+                    <th class="EventDay">9</th>
+                    <th class="Day">10</th>
+                    <th class="Day">11</th>
+                    <th class="Day">12</th>
+                    <th class="Day">13</th>
+                    <th class="Day">14</th>
+                </tr>
+
+                <tr class="Days">
+                    <th class="Day">15</th>
+                    <th class="Day">16</th>
+                    <th class="Day">17</th>
+                    <th class="EventDay">18</th>
+                    <th class="Day">19</th>
+                    <th class="Day">20</th>
+                    <th class="EventDay">21</th>
+                </tr>
+                <tr class="Days">
+                    <th class="Day">22</th>
+                    <th class="Day">23</th>
+                    <th class="Day">24</th>
+                    <th class="Day">25</th>
+                    <th class="Day">26</th>
+                    <th class="Day">27</th>
+                    <th class="Day">28</th>
+                </tr>                                
+                <tr class="Days">
+                    <th class="Day">29</th>
+                    <th class="Day">30</th>
+                    <th class="Day">31</th>
+                    <th class="NextMonthDay">1</th>
+                    <th class="NextMonthDayEvent">2</th>
+                    <th class="NextMonthDay">3</th>
+                    <th class="NextMonthDay">4</th>
+                </tr>
+            </table>      
+
+            <section class="EventList">
+                <section class="SingleEvent">
+                    <a class="EventDateText">09.10</a>
+                    <a class="EventTitle">Theropods Fossils</a>
+                    <a class="EventTheme">Paleontology</a>      
+                    <a class="EventMainText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+                </section>
+
+                <section class="SingleEvent">
+                    <a class="EventDateText">18.10</a>
+                    <a class="EventTitle">Van Gogh Exhibition</a>
+                    <a class="EventTheme">Art</a>      
+                    <a class="EventMainText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+                </section>
+
+                <section class="SingleEvent">
+                    <a class="EventDateText">21.10</a>
+                    <a class="EventTitle">Roman Weaponry</a>
+                    <a class="EventTheme">History</a>      
+                    <a class="EventMainText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u.</a>
+                </section>
+
+                <section class="LastSingleEvent">
+                    <a class="EventDateText">02.11</a>
+                    <a class="EventTitle">Conifer Trees</a>
+                    <a class="EventTheme">Botany</a>      
+                    <a class="EventMainText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </section>
+            </section>
+        </aside>
+        <section class="MainContentSection">
+            <section class="ExhibitionSection">
+                <p class="ExhibitionSectionLabel">New Paleontological Exhibition!</p>
+                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.   Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.</a>
+                <figure class="ExhibitionFig">
+                    <img class="ExhibitionSectionImage" src="images/paleontology_0.jpg" alt="paleontology hall" title="Paleontology Hall">  
+                    <figcaption class="ExhibitionSectionFig"><em>Paleontology Main Hall</em></figcaption> 
+                </figure>                       
+            </section>
+
+            <section class="ExhibitionSection">
+                <p class="ExhibitionSectionLabel">Van Gogh Exhibition Comes to The Town!</p>
+                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. 
+                    <figure class="ExhibitionFig">
+                        <img class="ExhibitionSectionImage" src="images/art_0.jpg" alt="van gogh paintings gallary" title="Van Gogh Paintings Gallary">  
+                        <figcaption class="ExhibitionSectionFig"><em>Art Exhibition, 3rd Floor</em></figcaption>
+                    </figure>     
+                     Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt.</a>                                      
+            </section>
+
+            <section class="ExhibitionSection">
+                <p class="ExhibitionSectionLabel">Ancient Roman Weaponry!</p>
+                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. 
+                    <figure class="ExhibitionFig">
+                        <img class="ExhibitionSectionImage" src="images/history_0.jpg" alt="roman weaponry exhibition" title="Roman Weaponry Exhibition">  
+                        <figcaption class="ExhibitionSectionFig"><em>Antiquity I-II Century, Roman Section</em></figcaption>
+                    </figure>   
+                     Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni.</a>                                      
+            </section>
+
+            <section class="ExhibitionSection">
+                <p class="ExhibitionSectionLabel">Conifer Tree Botanical Exhibition!</p>
+                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. 
+                    <figure class="ExhibitionFig">
+                        <img class="ExhibitionSectionImage" src="images/botany_0.jpg" alt="conifer tree" title="Conifer Tree">  
+                        <figcaption class="ExhibitionSectionFig"><em>Botanical Garden, Open Section III</em></figcaption>
+                    </figure>   
+                </a>                                      
+            </section>
+        </section>     
+    </main>
+
+    <footer class="MainFooter">
+        <section class="FooterContactInfoSection">
+            <p class="FooterContactInfoTitle">Contact Info:</p>
+            <a class="FooterContactInfoMainText">Ned: +310789545507</a>
+            <a class="FooterContactInfoMainText">Usa: +10116593446</a>
+            <a class="FooterContactInfoMainText">Email: main.contact@atlas.com</a>
+        </section>
+
+        <div class="FooterLine"></div>
+
+        <section class="FooterContactInfoSection">
+            <p class="FooterContactInfoTitle">Location:</p>
+            <section class="FooterLocationDiv">
+                <img class="FooterLocationImage" alt="location icon" title="Location" src="images/loc_icon.png">
+                <a class="FooterLocationLink" href="https://maps.app.goo.gl/q8KzZeEc3eonzGVb6">Groot Heiligland 62, 2011 ES Haarlem</a>
+            </section>
+            
+            <a class="FooterLocationMainText">From 2024 we are also available at virtual museum!</a>
+        </section>
+        
+        <div class="FooterLine"></div>
+
+        <section class="FooterContactInfoSection">
+            <p class="FooterContactInfoTitle">Other:</p>
+            <a class="FooterContactInfoLink">Buy ticket's</a>
+            <a class="FooterContactInfoLink">Privacy policy</a>
+            <a class="FooterContactInfoMainText">&copy;Atlas inc.</a>
+        </section>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>

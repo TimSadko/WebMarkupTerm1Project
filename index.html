@@ -2,19 +2,23 @@
 <head lang="en-US">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Timofii Sadko">
+    <meta name="keywords" content="Museum, Paleontology, Histort, Botany, Art, Gallery">
+    <meta name="description" content="This is the museum page. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. ">
 
     <title>Atlas</title>
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Grenze">
 
-    <link href="data:image/x-icon;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS40LjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTYgMjU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7Zm9udC1mYW1pbHk6J1NpdGthRGlzcGxheS1JdGFsaWMnO30NCgkuc3Qxe2ZvbnQtc2l6ZTozMDlweDt9DQo8L3N0eWxlPg0KPHRleHQgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgMSA0OS4xMzQ4IDIxOC43ODYxKSIgY2xhc3M9InN0MCBzdDEiPkE8L3RleHQ+DQo8L3N2Zz4NCg==" rel="icon" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS40LjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTYgMjU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7Zm9udC1mYW1pbHk6J1NpdGthRGlzcGxheS1JdGFsaWMnO30NCgkuc3Qxe2ZvbnQtc2l6ZTozMDlweDt9DQo8L3N0eWxlPg0KPHRleHQgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgMSA0OS4xMzQ4IDIxOC43ODYxKSIgY2xhc3M9InN0MCBzdDEiPkE8L3RleHQ+DQo8L3N2Zz4NCg=="/>
 </head>
-<body>
+<body lang="en-US">
     <aside class="MenuSideBar" id="menu_side">
         <div class="CloseSection" onclick="menu_side_bar_close()">
             <a>Close</a>
             <button class="CloseButton">
-                <img src="images/close_icon.svg" class="CloseIcon">
+                <img src="images/close_icon.svg" alt="close icon" title="Close Menu" class="CloseIcon">
             </button>
         </div>
         <a class="SelectedSection" onclick="go_to_home_page()">Home</a>
@@ -26,63 +30,81 @@
 
     <nav class="MainHeader">
         <button class="MenuButton" onclick="menu_side_bar_open()">
-            <img src="images/menu_icon.svg" class="MenuIcon">
+            <img src="images/menu_icon.svg" alt="menu icon" title="Menu" class="MenuIcon">
         </button>     
-        <div class="Logo"></div>
+        <img class="Logo" src="images/logo.svg">
         <a class="LogoText">Atlas</a>
     
-        <button class="RegisterButton" onclick="go_to_register_page()">register</button>
-        <div class="VerticalBreak"> </div>
-        <button class="LoginButton" onclick="go_to_login_page()">login</button>
+        <button class="RegisterButton" onclick="go_to_register_page()">Register</button>
+        <div class="VerticalBreak"></div>
+        <button class="LoginButton" onclick="go_to_login_page()">Login</button>
     </nav>
 
-    <section class="NewsUpperSection">
+    <header class="NewsUpperSection">
         <a class="NewsUpperSectionText">New Exhibitions Begins In June! Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. </a>
-    </section>  
+    </header>  
 
     <main class="MainPageContent">
         <section class="MainContentSection">
-            <section class="ExhibitionSection">
+            <article class="ExhibitionSection">
                 <p class="ExhibitionSectionLabel">New Paleontological Exhibition!</p>
                 <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.   Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.</a>
-                <img src="images/paleontology_0.jpg" class="ExhibitionSectionImage">                                      
-            </section>
+                <figure class="ExhibitionSectionFig">
+                    <img src="images/paleontology_0.jpg" alt="paleontology hall" title="Paleontology Hall" class="ExhibitionSectionFigImage">  
+                    <figcaption class="ExhibitionSectionFigCaption"><em>Paleontology Main Hall</em></figcaption>
+                </figure>                                    
+            </article>
 
             <section class="ExhibitionSection">
                 <p class="ExhibitionSectionLabel">Van Gogh Exhibition Comes to The Town!</p>
-                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. <img src="images/art_0.jpg" class="ExhibitionSectionImage"> Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt.</a>                                      
+                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. 
+                    <figure class="ExhibitionSectionFig">
+                        <img src="images/art_0.jpg" alt="van gogh paintings gallary" title="Van Gogh Paintings Gallary" class="ExhibitionSectionFigImage">  
+                        <figcaption class="ExhibitionSectionFigCaption"><em>Art Exhibition, 3rd Floor</em></figcaption>
+                    </figure>     
+                     Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt.</a>                                      
             </section>
 
             <section class="ExhibitionSection">
                 <p class="ExhibitionSectionLabel">Ancient Roman Weaponry!</p>
-                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. <img src="images/history_0.jpg" class="ExhibitionSectionImage"> Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni.</a>                                      
+                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. 
+                    <figure class="ExhibitionSectionFig">
+                        <img src="images/history_0.jpg" alt="roman weaponry exhibition" title="Roman Weaponry Exhibition" class="ExhibitionSectionFigImage">  
+                        <figcaption class="ExhibitionSectionFigCaption"><em>Antiquity I-II Century, Roman Section</em></figcaption>
+                    </figure>   
+                     Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni.</a>                                      
             </section>
 
             <section class="ExhibitionSection">
                 <p class="ExhibitionSectionLabel">Conifer Tree Botanical Exhibition!</p>
-                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. <img src="images/botany_0.jpg" class="ExhibitionSectionImage"></a>                                      
+                <a class="ExhibitionSectionMainText">Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio. Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. Qui laborum labore est magnam perspiciatis in recusandae eaque est dolor nesciunt. Et inventore repellendus aut aspernatur odio est quia distinctio.Lorem ipsum dolor sit amet. At sunt nobis non sint dolor est Quis consequuntur ab excepturi magnam. Et galisum quas est odio aperiam sit alias animi. Quo accusantium repellendus ut corrupti repudiandae sed praesentium suscipit aut nostrum nobis ut consequatur labore ut maiores asperiores. Aut temporibus officia eos provident quasi aut iusto dolores sed voluptatem tempore et soluta quia. Ad nihil iste in doloribus possimus et quia ratione ut ullam adipisci quo praesentium magni. 
+                    <figure class="ExhibitionSectionFig">
+                        <img src="images/botany_0.jpg" alt="conifer tree" title="Conifer Tree" class="ExhibitionSectionFigImage">  
+                        <figcaption class="ExhibitionSectionFigCaption"><em>Botanical Garden, Open Section III</em></figcaption>
+                    </figure>   
+                </a>                                      
             </section>
         </section>
         <aside class="SideContentSection">      
             <table class="Calendar">
                 <colgroup>
-                    <col style="width: 6.5vh;">
-                    <col style="width: 6.5vh;">
-                    <col style="width: 6.5vh;">
-                    <col style="width: 6.5vh;">
-                    <col style="width: 6.5vh;">
-                    <col style="width: 6.5vh;">
-                    <col style="width: 6.5vh;">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
+                    <col class="CalendarCol">
                 </colgroup>
 
                 <tr class="Weekdays">
-                    <th class="WeekDayS">Mo</th>
-                    <th class="WeekDayS">Tu</th>
-                    <th class="WeekDayS">We</th>
-                    <th class="WeekDayS">Th</th>
-                    <th class="WeekDayS">Fr</th>
-                    <th class="WeekDayS">Sa</th>
-                    <th class="WeekDayS">Su</th>
+                    <th class="WeekDayS"><strong>Mo</strong></th>
+                    <th class="WeekDayS"><strong>Tu</strong></th>
+                    <th class="WeekDayS"><strong>We</strong></th>
+                    <th class="WeekDayS"><strong>Th</strong></th>
+                    <th class="WeekDayS"><strong>Fr</strong></th>
+                    <th class="WeekDayS"><strong>Sa</strong></th>
+                    <th class="WeekDayS"><strong>Su</strong></th>
                 </tr>
                 <tr class="Days">  
                     <th class="Day">1</th>
@@ -174,21 +196,21 @@
         <div class="FooterLine"></div>
         <section class="FooterContactInfoSection">
             <p class="FooterContactInfoTitle">Location:</p>
-            <div class="FooterLocationDiv">
-                <img class="FooterLocationImage" src="images/loc_icon.png">
-                <a href="https://maps.app.goo.gl/q8KzZeEc3eonzGVb6" class="FooterLocationLink">Groot Heiligland 62,<br> 2011 ES Haarlem</a>
-            </div>
+            <section class="FooterLocationDiv">
+                <img class="FooterLocationImage" alt="location icon" title="Location" src="images/loc_icon.png">
+                <a href="https://maps.app.goo.gl/q8KzZeEc3eonzGVb6" class="FooterLocationLink">Groot Heiligland 62, 2011 ES Haarlem</a>
+            </section>
             
-            <a class="FooterLocationMainText">From 2024 we are also available<br>at virtual museum!</a>
+            <a class="FooterLocationMainText">From 2024 we are also available at virtual museum!</a>
         </section>
         <div class="FooterLine"></div>
         <section class="FooterContactInfoSection">
             <p class="FooterContactInfoTitle">Other:</p>
             <a class="FooterContactInfoLink">Buy ticket's</a>
-            <a class="FooterContactInfoMainText">Lorem ipsum dolor sit amet.</a>
-            <a class="FooterContactInfoMainText">Lorem ipsum dolor sit amet.</a>
+            <a class="FooterContactInfoLink">Privacy policy</a>
+            <a class="FooterContactInfoMainText">&copy;Atlas inc.</a>
         </section>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>

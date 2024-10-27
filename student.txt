@@ -1,0 +1,5 @@
+Student name: Timofii Sadko
+Student number: 732456
+Student class: HAIT24FT1C
+GitHub Repository: your github repository URL
+GitHub Pages URL: your github pages URL
